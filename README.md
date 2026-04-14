@@ -1,12 +1,12 @@
-# ArenaTree
+# ArenaTreeRs
 
 A high-performance, feature-rich Arena Tree library for Rust.
 
-`ArenaTree` is a memory-efficient tree data structure where nodes are stored in a contiguous vector (the "arena"). Relationships are maintained using type-safe indices (`NodeId`), providing extreme performance and avoiding the common "borrow checker" complexities of pointer-based trees in Rust.
+`ArenaTreeRs` is a memory-efficient tree data structure where nodes are stored in a contiguous vector (the "arena"). Relationships are maintained using type-safe indices (`NodeId`), providing extreme performance and avoiding the common "borrow checker" complexities of pointer-based trees in Rust.
 
 ---
 
-## 🚀 Why ArenaTree?
+## 🚀 Why ArenaTreeRs?
 
 ### 1. Cache Locality
 Because nodes are stored next to each other in a `Vec<Node<T>>`, tree traversals are much more cache-friendly than pointer-based trees. This significantly reduces CPU cache misses.
@@ -28,7 +28,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-arena_tree = "0.1.0"
+arena_tree_rs = "0.1.0"
 ```
 
 ---
@@ -63,7 +63,7 @@ arena_tree = "0.1.0"
 
 ### 1. Basic Tree Building
 ```rust
-use arena_tree::{Arena, NodeId};
+use arena_tree_rs::{Arena, NodeId};
 
 fn main() {
     let mut arena = Arena::new();

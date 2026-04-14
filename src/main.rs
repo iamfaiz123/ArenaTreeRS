@@ -1,4 +1,4 @@
-use arena_tree::{Arena, NodeId};
+use arena_tree_rs::{Arena, NodeId};
 
 fn main() {
     let mut arena = Arena::new();

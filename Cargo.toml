@@ -1,5 +1,5 @@
 [package]
-name = "arena_tree"
+name = "arena_tree_rs"
 version = "0.1.0"
 authors = ["Faizal Khan <faizalkhn98641@gmail.com>"]
 edition = "2024"
@@ -8,6 +8,7 @@ license = "MIT"
 readme = "README.md"
 keywords = ["tree", "arena", "id-tree", "data-structure"]
 categories = ["data-structures", "no-std"]
+repository = "https://github.com/iamfaiz123/ArenaTreeRS"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"], optional = true }
